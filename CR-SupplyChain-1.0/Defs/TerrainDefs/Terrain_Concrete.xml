@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToMake>135</WorkToMake>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>Concrete</defName>
+    <label>concrete</label>
+    <Description>Quick-poured concrete. Fast to walk on, cheap, and very quick to pour, but quite ugly.</Description>
+    <texturePath>Terrain/Surfaces/Concrete</texturePath>
+    <EdgeType>Hard</EdgeType>
+    <RenderPrecedence>70</RenderPrecedence>
+    <statBases>
+      <WorkToMake>70</WorkToMake>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <CostList>
+      <ConcreteBlock>1</ConcreteBlock>
+    </CostList>
+    <designationHotkey>Misc6</designationHotkey>
+  </TerrainDef>
+
+</TerrainDefs>

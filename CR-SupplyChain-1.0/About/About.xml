@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>CR-Supply Chain Consolidator</name>
+  <author>Cannibar Rechter</author>
+  <url></url>
+  <targetVersion>0.14.1234</targetVersion>
+  <description>Provides supply chain consolidation stone blocks, leather, and food stuffs.</description>
+</ModMetaData>

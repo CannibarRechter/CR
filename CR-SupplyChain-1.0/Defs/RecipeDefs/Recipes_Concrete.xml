@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MakeRebar</defName>
+		<label>Make rebar</label>
+		<description>Make rebar from steel.</description>
+		<jobString>Making rebar.</jobString>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<workAmount>500</workAmount>
+		<workSkill>Crafting</workSkill>		
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>      
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>	
+			<li>ElectricSmelter</li>				
+		</recipeUsers>		
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Rebar>40</Rebar>
+		</products>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAggregate</defName>
+    <label>Make aggregate from chunks</label>
+    <description>Make aggregate from stone chunks.</description>
+    <jobString>Making aggregate.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>	
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<recipeUsers>
+		<li>TableStonecutter</li>
+	</recipeUsers>	
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aggregate>200</Aggregate>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </defaultIngredientFilter>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeAggregate2</defName>
+    <label>Make aggregate from blocks</label>
+    <description>Make aggregate from stone blocks.</description>
+    <jobString>Making aggregate.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>	
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<recipeUsers>
+		<li>TableStonecutter</li>
+	</recipeUsers>	
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aggregate>200</Aggregate>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+	  <exceptedThingDefs>
+		<li>ConcreteBlock</li>
+	  </exceptedThingDefs>	  
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </defaultIngredientFilter>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeConcrete</defName>
+    <label>Make concrete blocks and tiles</label>
+    <description>Make concrete from aggregate and rebar.</description>
+    <jobString>Making concrete.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>	
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<recipeUsers>
+		<li>TableStonecutter</li>
+	</recipeUsers>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rebar</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aggregate</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>	  
+    </ingredients>
+    <products>
+      <ConcreteBlock>60</ConcreteBlock>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aggregate</li>
+        <li>Rebar</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aggregate</li>
+        <li>Rebar</li>	
+      </thingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+  
+</RecipeDefs>

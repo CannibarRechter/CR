@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MakeCheese</defName>
+		<label>make cheese</label>
+		<description>Make cheese from milk sources. Can be eaten. Keeps well.</description>
+		<jobString>Making cheese.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>700</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>      
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>		
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Milk</li>
+			</thingDefs>		
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<Cheese>10</Cheese>
+		</products>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeJerky</defName>
+    <label>make jerky</label>
+    <description>Make jerky from meat sources. Can be eaten, or used in meal preparation. Keeps well.</description>
+    <jobString>Making jerky.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>	
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <products>
+      <Jerky>10</Jerky>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+	  <exceptedThingDefs>
+		<li>Jerky</li>
+	  </exceptedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakePickles</defName>
+    <label>make preserves</label>
+    <description>Make preserves from vegetable sources. Can be eaten, or used in meal preparation. Keeps very well.</description>
+    <jobString>Making pickles.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>	
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <products>
+      <Pickles>20</Pickles>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+	  <exceptedThingDefs>
+		<li>Pickles</li>
+		<li>Milk</li>
+		<li>Cheese</li>		
+		<li>Hay</li>		
+	  </exceptedThingDefs>	  
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakePickledEggs</defName>
+    <label>make pickled eggs</label>
+    <description>Make pickled eggs from various egg sources; keeps well.</description>
+    <jobString>Pickling Eggs.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>	
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <PickledEggs>16</PickledEggs>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>EggsUnfertilized</li>
+      </categories>
+	  <exceptedThingDefs>
+		<li>PickledEggs</li>
+	  </exceptedThingDefs>	  
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>EggsUnfertilized</li>
+      </categories>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>  
+</RecipeDefs>

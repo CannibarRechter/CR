@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+	<stackLimit>2000</stackLimit>
+	<drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+
+  <ThingDef Abstract="True" Name="PlantFoodRawBase" ParentName="OrganicProductBase">
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tastesRaw>true</tastesRaw>
+      <nutrition>0.05</nutrition>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>RawVegetable_Eat</soundEat>
+    </ingestible>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_FoodPoisoningChance" />
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+      <defName>Cheese</defName>
+      <label>cheese</label>
+      <description>A wheel of cheese.</description>
+      <graphicData>
+      <texPath>Items/Cheese</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+      <statBases>
+         <MarketValue>15</MarketValue>
+      </statBases>
+      <ingestible>
+         <preferability>MealSimple</preferability>
+         <foodType>Meal, Processed</foodType>		 
+		 <tastesRaw>false</tastesRaw>		 
+         <nutrition>0.2</nutrition>
+         <joy>0.01</joy>
+         <eatEffect>EatVegetarian</eatEffect>
+         <soundEat>Meal_Eat</soundEat>
+      </ingestible>
+	  <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      </comps>	  
+   </ThingDef>
+   
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Pickles</defName>
+    <label>preserves</label>
+    <description>Preserved or pickled food. Nice to eat. Keeps very well. Can be used to prepare meals.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Items/Pickles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+    </graphicData>
+    <statBases>
+      <MarketValue>4.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <nutrition>0.1</nutrition>
+      <joy>0.01</joy> 
+      <foodType>VegetableOrFruit</foodType>
+      <preferability>RawTasty</preferability>
+      <tastesRaw>false</tastesRaw>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="MeatRawBase" ParentName="OrganicProductBase">
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tastesRaw>true</tastesRaw>
+      <nutrition>0.05</nutrition>
+      <eatEffect>EatMeat</eatEffect>
+      <soundEat>RawMeat_Eat</soundEat>
+    </ingestible>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_FoodPoisoningChance" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MeatRawBase">
+    <defName>Jerky</defName>
+    <label>Jerky</label>
+    <description>Jerky. Nice to eat, even when raw. Keeps well. Can be used to prepare meals.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Items/Jerky</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+    </graphicData>
+    <statBases>
+      <MarketValue>4.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <nutrition>0.2</nutrition>
+      <joy>0.01</joy>		  
+      <foodType>AnimalProduct</foodType>
+      <preferability>MealSimple</preferability>
+      <tastesRaw>false</tastesRaw>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase" >
+    <defName>PickledEggs</defName>
+	<label>pickled eggs</label>
+    <description>Eggs, pickled for long term storage.</description>
+    <graphicData>
+      <texPath>Items/PickledEggs</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <nutrition>0.35</nutrition>
+      <joy>0.01</joy>	  
+      <eatEffect>EatMeat</eatEffect>
+      <soundEat>RawMeat_Eat</soundEat>
+      <tastesRaw>true</tastesRaw>
+	  <preferability>RawTasty</preferability>
+    </ingestible>
+    <thingCategories>
+      <li>EggsUnfertilized</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_FoodPoisoningChance" />
+    </comps>
+    <statBases>
+      <MarketValue>11.0</MarketValue>
+    </statBases>
+    <stackLimit>200</stackLimit>	
+  </ThingDef>
+  
+</Defs>

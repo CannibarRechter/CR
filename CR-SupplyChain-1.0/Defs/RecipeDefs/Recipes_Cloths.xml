@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+  
+  <RecipeDef>
+    <defName>MakeTreatedFabric</defName>
+    <label>Make treated fabric</label>
+    <description>Make treated fabric from various cloth types. Includes a water-repellent.</description>
+    <jobString>Making studded leather.</jobString>
+    <workAmount>350</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <recipeUsers>
+      <li>HandTailoringBench</li>
+      <li>ElectricTailoringBench</li>	  
+    </recipeUsers>
+	<allowMixingIngredients>true</allowMixingIngredients>	
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Textiles</li>			
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>  
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Textiles</li>	
+      </categories>		
+	  <exceptedThingDefs>
+		<li>TreatedFabric</li>
+		<li>DevilstrandCloth</li>
+		<li>StuddedLeather</li>			
+		<li>DevilLeather</li>		
+		<li>Hyperweave</li>		
+	  </exceptedThingDefs>	
+	  <exceptedCategories>
+		<li>Leathers</li>
+	  </exceptedCategories>	  
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Textiles</li>	
+      </categories>		
+    </defaultIngredientFilter>	
+    <products>
+      <TreatedFabric>30</TreatedFabric>
+    </products>	
+  </RecipeDef>
+  
+</RecipeDefs>

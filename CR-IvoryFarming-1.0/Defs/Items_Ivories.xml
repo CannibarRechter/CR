@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Thrumbory</defName>
+    <label>thrumbory</label>
+    <description>Harvested from the Domestic Thrumbo, Thrumbo Ivory ... 'thrumbory' may be used for gorgeous art and lethal melee weapons.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ThrumboHorn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <SharpDamageMultiplier>1.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>750</stackLimit>
+    <stuffProps>
+      <stuffAdjective>thrumbory</stuffAdjective>		
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <color>(245,245,245)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>1.8</MaxHitPoints>
+        <WorkToMake>1.5</WorkToMake>
+        <Beauty>3</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Ivory</defName>
+    <label>ivory</label>
+    <description>Harvested from elephants, ivory is used to make beautiful art.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ElephantTusk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>750</stackLimit>
+    <stuffProps>
+      <stuffAdjective>ivory</stuffAdjective>	
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <color>(255,255,240)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>4</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <WorkToMake>0.8</WorkToMake>
+        <Beauty>2</Beauty>
+        <Flammability>1.0</Flammability>
+        <MeleeWeapon_Cooldown>1.0</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+</GameData>

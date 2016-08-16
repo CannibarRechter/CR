@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rebar</defName>
+    <label>rebar</label>
+    <description>Iron rebar, a basic building supply.</description>
+    <graphicData>
+      <texPath>Items/Rebar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.35</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>5000</stackLimit>
+    <stuffProps>
+      <constructEffect>ConstructMetal</constructEffect>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Aggregate</defName>
+    <label>aggregate</label>
+    <description>Stone aggregate, prepped for making concrete.</description>
+    <graphicData>
+      <texPath>Items/Aggregate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>5000</stackLimit>
+    <stuffProps>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+ 
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ConcreteBlock</defName>
+    <label>concrete</label>
+    <description>Blocks of iron-reinforced concrete. Ugly, but strong.</description>
+    <graphicData>
+      <texPath>Items/Concrete</texPath>
+      <color>(225,225,225)</color>	  
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <stackLimit>500</stackLimit>		
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <color>(225,225,225)</color>	 
+      <appearance>Bricks</appearance>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>concrete</stuffAdjective>	  
+      <statOffsets>
+        <WorkToMake>100</WorkToMake>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <Beauty>-1</Beauty>
+        <MarketValue>1.0</MarketValue>
+        <MaxHitPoints>2.55</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToMake>3.0</WorkToMake>
+        <DoorOpenSpeed>0.64</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_Cooldown>1.35</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef> 
+  
+</Defs>

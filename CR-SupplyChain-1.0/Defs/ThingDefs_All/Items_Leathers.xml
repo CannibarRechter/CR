@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>StuddedLeather</defName>
+    <label>studded leather</label>
+    <description>Studded leather: made from cured animal hides and reinforced with steel.</description>
+   <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(21,20,17)</color>
+    </graphicData>
+    <stackLimit>500</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>9.5</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>	
+    <stuffProps>	
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(21,20,17)</color>
+      <statOffsets>
+        <ArmorRating_Heat>0.03</ArmorRating_Heat>
+        <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.04</ArmorRating_Sharp>	
+        <ArmorRating_Electric>0.03</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+        <WorkToMake>0.8</WorkToMake>	  
+	    <ArmorRating_Blunt>1.3</ArmorRating_Blunt> 
+        <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+        <ArmorRating_Heat>1.3</ArmorRating_Heat>
+        <Insulation_Cold>1.1</Insulation_Cold>
+      </statFactors>
+    </stuffProps>	  
+  </ThingDef>
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>DevilLeather</defName>
+    <label>devil leather</label>
+    <description>Devil Leather: made from animal hides, devilstrand, and plasteel.</description>
+   <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(100,29,29)</color>
+    </graphicData>
+    <stackLimit>500</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>18</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>	
+    <stuffProps>	
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(100,29,29)</color>
+      <statOffsets>
+        <ArmorRating_Heat>0.04</ArmorRating_Heat>
+        <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.04</ArmorRating_Sharp>	
+        <ArmorRating_Electric>0.04</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+        <WorkToMake>0.8</WorkToMake>	  
+	    <ArmorRating_Blunt>1.5</ArmorRating_Blunt> 
+        <ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+        <ArmorRating_Heat>1.5</ArmorRating_Heat>
+        <ArmorRating_Electric>1.5</ArmorRating_Electric>		
+        <Insulation_Cold>1.8</Insulation_Cold>
+        <Insulation_Heat>1.8</Insulation_Heat>	
+      </statFactors>
+    </stuffProps>	  
+  </ThingDef>
+  
+</Defs>
