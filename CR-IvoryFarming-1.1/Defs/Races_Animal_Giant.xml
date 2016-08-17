@@ -22,8 +22,8 @@
 	<comps>
       <li Class="CompProperties_Shearable">
         <woolDef>Ivory</woolDef>
-        <shearIntervalDays>1</shearIntervalDays>
-        <woolAmount>150</woolAmount>
+        <shearIntervalDays>3</shearIntervalDays>
+        <woolAmount>30</woolAmount>
       </li>   
 	</comps>  
     <race>
@@ -165,8 +165,8 @@
 	<comps>
       <li Class="CompProperties_Shearable">
         <woolDef>Thrumbory</woolDef>
-        <shearIntervalDays>1</shearIntervalDays>
-        <woolAmount>150</woolAmount>
+        <shearIntervalDays>3</shearIntervalDays>
+        <woolAmount>30</woolAmount>
       </li> 	  
 	</comps>  	
     <race>
